@@ -4,7 +4,7 @@ This repository contains the material of the Computer Science and Engineering co
 
 Unfortunately, the contents of many courses are not complete. Also, there are some courses not included. It's because I lost backup files of them :(
 
-## Courses that are not complete
+## Courses whose contents are not complete
 
 - [Digital Computer Concept and Practice, Spring 2013](https://github.com/hyunjinjeong/snu-cse-courses-material/tree/master/Digital%20Computer%20Concept%20and%20Practice%2C%20Spring%202013) - No source code for practices
 - [Computer Programming, Spring 2014](https://github.com/hyunjinjeong/snu-cse-courses-material/tree/master/Computer%20Programming%2C%20Spring%202014) - No source code for the exercises and the labs
