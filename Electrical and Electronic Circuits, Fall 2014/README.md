@@ -1,0 +1,3 @@
+# Electrical and Electronic Circuits @ Seoul National University, Fall 2014
+
+In this lecture, basics on electrical and electronic circuits will be covered. We will start with the resistive circuits and various analysis techniques. Then, we will learn how the same MOS transistor is used for both digital switching circuits and analog amplifier circuits. In the second half of the lecture, we focus on the first-order and the second-order circuits that include capacitor or inductor elements. Specially frequency-domain analysis techniques will be taught. From this course, non-EE major students will learn the basics for digital system hardware.

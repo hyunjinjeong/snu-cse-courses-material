@@ -1,17 +1,28 @@
-# SNU 4190.310, Spring 2015 #
+# Progamming Language @ Seoul National University, Spring 2015
+
+## About
 
 - Instructor: Prof. [Gil Hur](http://sf.snu.ac.kr/gil.hur)
 - TA: [Jeehoon Kang](http://sf.snu.ac.kr/jeehoon.kang)
-    + Email address: [pl2015@sf.snu.ac.kr](mailto:pl2015@sf.snu.ac.kr).
-        * Send emails for personal matters only. Use the issue tracker.
-        * DO NOT send emails to jee...@sf.snu.ac.kr.
-        * In the case you send TA an email, specify your name and your student ID.
-    + Office Hour: At bldg 301 rm 554-1. Please email me to make an appointment.
+  - Email address: [pl2015@sf.snu.ac.kr](mailto:pl2015@sf.snu.ac.kr).
+    - Send emails for personal matters only. Use the issue tracker.
+    - DO NOT send emails to jee...@sf.snu.ac.kr.
+    - In the case you send TA an email, specify your name and your student ID.
+- Office Hour: At bldg 301 rm 554-1. Please email me to make an appointment.
 
-## Announcements ##
+## Goals
+
+This course examines fundamental syntactic and semantic concepts underlying modern programming languages. It helps students compose several small programs in various programming languages.
+
+We will learn a course, called software foundation, which was developed at Upenn and has been taught in several top schools in the world.
+
+See the following site for more details.
+http://www.cis.upenn.edu/~bcpierce/sf/current/index.html
+
+## Announcements
 
 - [Document on assignments](Homework.md) is updated! Assignment 01 is issued (due: 2015/03/19).
-    + TA will give you office hour 2015/03/16-2015/03/18. See [here](https://github.com/snu-sf/pl2015/issues/15).
+  - TA will give you office hour 2015/03/16-2015/03/18. See [here](https://github.com/snu-sf/pl2015/issues/15).
 - Check the [GitHub repository status](https://github.com/snu-sf/pl2015/issues/14).
 - Now you can use Coq 8.4pl5 in martini.snucse.org and midori.snucse.org! Run `coqide`. Thanks to [@kcm1700](https://github.com/kcm1700)!
 - Check if your student IDs are correct [here](https://docs.google.com/spreadsheets/d/1LzOLx22lF3N31D9RDS20Ec8ub_Rq6IA3utD8CNMk9CQ/edit#gid=0).
@@ -19,7 +30,7 @@
 - We will have a lab session at 2015/03/04 (Thu). Please come to Software Lab, 3rd floor, bldg 302.
 - We will change your seats at 2015/05/19 (Tue).
 
-## Homeworks ##
+## Homeworks
 
 | Due        	| Description 	 	 	 	 	 	 	 	 	 	 	 	 	 	| Notes 	|
 |------------	|---------------------------------------------------------------	|-------	|
@@ -40,34 +51,33 @@
 | 2015/03/09 	| Read articles on [GitHub](https://help.github.com/). Especially, read Bootcamp, Setup, Using Git, User Accounts, and SSH sections.	|       	|
 | 2015/03/09 	| Register at [GitHub](https://github.com), and give me your information [here](http://goo.gl/forms/YUjIxNo3LD).	|       	|
 
-## Must Read ##
+## Must Read
 
 - *READ CAREFULLY* this section.
 
-### Grading ###
+### Grading
 
 - Homework: 40%
-    + Coq problems in the [software foundations material](http://www.cis.upenn.edu/~bcpierce/sf/current/index.html). Read carefully the next subsections.
+  - Coq problems in the [software foundations material](http://www.cis.upenn.edu/~bcpierce/sf/current/index.html). Read carefully the next subsections.
 - Exams: 50% (mid-term 25% and final 25%)
-    + You will solve Coq problems at the lab during the exam.
+  - You will solve Coq problems at the lab during the exam.
 - Attendance: 10%
-    + -2% per absence. We will take a photo around 5:30 from 2015/03/09. *IMPORTANT: 6 absences makes an F*.
-    + You are assigned a seat that you will use in this course. See: https://docs.google.com/spreadsheets/d/1LzOLx22lF3N31D9RDS20Ec8ub_Rq6IA3utD8CNMk9CQ/edit#gid=0
+  - -2% per absence. We will take a photo around 5:30 from 2015/03/09. *IMPORTANT: 6 absences makes an F*.
+  - You are assigned a seat that you will use in this course. See: https://docs.google.com/spreadsheets/d/1LzOLx22lF3N31D9RDS20Ec8ub_Rq6IA3utD8CNMk9CQ/edit#gid=0
 
-### Questions ###
+### Questions
 
 - In class: if you speak Korean, ask in Korean. Otherwise, ask in English.
 - In the [GitHub repository issue tracker](https://github.com/snu-sf/pl2015/issues): ask in English.
 - Send email for *personal matters only*.
 - If you want to post a piece of source code, please DO NOT upload an image of it. Because it is hard to reconstruct texts from images.
-    + Instead, use GitHub Markdown's ["fenced code blocks" feature](https://help.github.com/articles/github-flavored-markdown/#fenced-code-blocks).
-    + Or, you can always use [GitHub Gist](https://gist.github.com/).
+  - Instead, use GitHub Markdown's ["fenced code blocks" feature](https://help.github.com/articles/github-flavored-markdown/#fenced-code-blocks).
+  - Or, you can always use [GitHub Gist](https://gist.github.com/).
 
-### Coq ###
+### Coq details
 
 See [Coq.md](Coq.md) for more details.
 
-### Homeworks ###
+### Homeworks details
 
 See [Homework.md](Homework.md) for more details.
-

@@ -1,0 +1,3 @@
+# Computer Architecture @ Seoul National University, Fall 2014
+
+Computer architecture is the science of selecting and interconnecting hardware components and designing a hardware/software interface to build a computer that meets functional, performance, energy consumption, cost, and other specific goals. In this course, you will learn the basics of a modern programmable computer including the instruction set, pipelining to run several instructions simultaneously, and several other techniques such as virtual memory or caches. The theoretical principles taught in class are applied in pracice in labs (small projects) and homework assignments.
