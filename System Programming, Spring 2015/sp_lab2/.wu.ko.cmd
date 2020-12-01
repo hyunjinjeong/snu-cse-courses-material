@@ -1,0 +1,1 @@
+cmd_/home/hyunjin/sp_prj2/wu.ko := ld -r -m elf_i386 -T /usr/src/linux-headers-3.13.0-37-generic/scripts/module-common.lds --build-id  -o /home/hyunjin/sp_prj2/wu.ko /home/hyunjin/sp_prj2/wu.o /home/hyunjin/sp_prj2/wu.mod.o

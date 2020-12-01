@@ -1,0 +1,53 @@
+Require export imp.
+
+Inductive sorted_min: nat -> list nat -> Prop :=
+   | sort_0 : forall (n: nat), sorted_min n []
+   | sort_2 : forall (n m: nat) (l: list nat), n <= m -> sorted_min n l -> sorted_min n (m::l) 
+.
+ 
+Lemma O_le_n: forall n,
+  0 <= n.
+Proof.
+  induction n.
+  apply le_n.
+  apply le_S.
+  apply IHn.
+Qed.
+  
+ 
+ 
+Example sorted_min_example1: sorted_min 0 [1; 3; 4; 4; 5].
+Proof. 
+  apply sort_2.
+  apply O_le_n.
+  apply sort_2.
+  apply O_le_n.
+  apply sort_2.
+  apply O_le_n.
+  apply sort_2.
+  apply O_le_n.
+  apply sort_2.
+  apply O_le_n.
+  apply sort_0.
+Qed.
+ 
+Example sorted_min_example2: sorted_min 2 [2; 2; 3; 6].
+Proof. 
+  apply sort_2.
+  apply le_n.
+  apply sort_2.
+  apply le_n.
+  apply sort_2.
+  apply le_S.
+  apply le_n.
+  apply sort_2.
+  apply le_S; apply le_S; apply le_S; apply le_S.
+  apply le_n.
+  apply sort_0.
+ 
+Example sorted_min_non_example1: sorted_min 1 [0; 1] -> False.
+Proof. 
+  intros.
+  inversion H.
+  inversion H3.
+Qed.

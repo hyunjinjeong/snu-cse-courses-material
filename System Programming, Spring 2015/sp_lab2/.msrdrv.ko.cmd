@@ -1,0 +1,1 @@
+cmd_/home/hyunjin/sp_prj2/msrdrv.ko := ld -r -m elf_i386 -T /usr/src/linux-headers-3.13.0-37-generic/scripts/module-common.lds --build-id  -o /home/hyunjin/sp_prj2/msrdrv.ko /home/hyunjin/sp_prj2/msrdrv.o /home/hyunjin/sp_prj2/msrdrv.mod.o
