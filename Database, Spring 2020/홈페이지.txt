@@ -1,0 +1,8 @@
+http://ids.snu.ac.kr/site/lectures/2020%20Spring%20Databases.html
+http://ids.snu.ac.kr/xwiki/bin/view/Main/Lecture/2020%20Spring%20Database/
+
+
+슬라이드 비밀번호: dbintro
+
+메일 보낼 때 제목에 '[데이터베이스]' 필수!
+
