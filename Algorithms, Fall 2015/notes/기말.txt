@@ -1,0 +1,288 @@
+Graph Algorithms
+
+
+- Topological sorting
+A directed acyclic graph(DAG) is a digraph without any cycle.
+Let G = (V, E) be a DAG.
+A topological sort of G is an arrangement of the vertex set s.t. if (i, j) in E, then i appears before j in the arrangement.
+
+Topological-sort(v):
+  mark[v] <- visited;
+  for all w in L(v)
+    if(mark[w] = unvisited)
+      Topological-sort(w);
+  output v;
+
+The algorithm gives a reverse topological sort listing.
+DFS와 비슷.
+
+DFS(v):
+  mark[v] <- visited;
+  for all w in L(v)
+    if(mark[w] = unvisited)
+      DFS(w);
+
+ 
+- Strongly Connected Components
+Let G = (V,E) be a digraph.
+A strongly connected component of G is a maximal set of vertices in which there is a directed path between any two vertices in the set.(mutually reachable)
+* A digraph is said to be strongly connected if it has only one strongly connected component.
+
+strongly-connected-component(G):
+  1. call DFS(G) to compute finishing time f[u] for all u in G.
+  2. Construct G^(R) by reversing all the edges of G.
+  3. call DFS(G^(R)) at the vertex with the highest finishing time.
+     if it doesn't cover all the vertices. then call DFS again at the vertex with the highest among the remaining vertices.
+  4. Each tree(DFS tree, set) resulted by 3 is a strongly connected component.
+
+Claim:
+  v & w are in the same strongly commont component <=> v & w are in the same tree in the DFS forest of step 3.
+
+<proof>
+  (=>) easy. trivial.
+  (<=) Assume v & w are in the same tree in the DFS forest of G^(R).
+       Some (x -> v) in G^(R) =>  some (v -> x)
+       suppose to the contrary that in G. no path x -> v in G. ( x는 꼭대기)
+       (만약 x->v가 존재하지 않는다면 절대로 x의 finishing time이 v보다 커질 수 없다. 이를 w에도 적용할 수 있으므로 v,w는 같은 tree에 존재..)
+       Then f[x] < f[v]. Contradiction since f[x] > f[v] by step 3. 
+       Similarly, we can show that some (x ---> w) in G, therefore, there is some (v ---> w) and (w ---> v) in G.
+       v & w are in the same strongly common component.
+
+
+- Minimum Spanning Trees
+Given a connected (undirected) graph G = (V, E) and a weight function W: E->R, a spanning tree T of G is a subgraph of G which includes all vertices of G and is a tree.
+The weight of a spanning tree T is w(T) = sigma_(e in T) {W(e)}  ( e = n-1개)
+
+Objectives:
+	Given G = (V, E) a connected graph, find a spanning tree with the minimum weight.
+
+Fundamental principle:
+	Theorem. Let (S, V-S) be a bipartition of vertices. If {u, v} is an edge with the minimum weight among these edges crossing S and V-S.
+		 Then there exists a mininum spanning tree containing {u, v}.
+	<Proof>
+		In any minimum spanning tree T not containing the edge {u, v}, then is only one path between u and v. The path contains at least one edge crossing S and V-S.
+		Take such a crossing edge {x, y}. Note that W{x,y} >= W{u,v}.
+		Case 1: If W{x, y} > W{u, v}, the T is not M.S.T. (The tree T U {{u,v}} - {{x,y}} is less weighted than T)
+		Case 2: If W{x, y} == W{u, v}, then T U {{u,v}} - {{x, y}} has the same weight as T. Hence T U {{u,v}} - {{x, y}} is also a M.S.T.
+
+* If edge weights are all distinct, there exists only one M.S.T. If not, There can be more than one M.S.T.
+
+Kruskal's Algorithm:
+	Idea: Build a M.S.T T by adding minimum edges not generating cycles.
+	1, T = empty initialize.
+	2. Initialize n singleton sets each containing a vertex.
+	3. Sort the edges by nondecreasing weight order and put them in Q.
+	4. While T has fewer than |v| - 1 edges, choose minimum cost edge {u, v} in Q. Delete {u, v} from Q.
+	   If u and v belong to different sets, then T = T U {{u, v}}, merge the two sets containing u and v.
+	
+	수행 시간은 1. 상수, 2. O(n), 3. O(|E|log|E|) = O(|E|log|V|), 4. 여기선 while을 돌면서 find operation 수행이 문제. tree 구조와 여러 heuristic을 쓰면 최악의 경우 O(|E|log^*|V|) == O(|E|).
+	즉 수행시간은 O(|E|log|V|).
+
+Prim's Algorithm:
+	Idea: Build a M.S.T. by adding one vertex at a time to T.
+	
+	Q <- V; (Q contains vertices not yet in T)
+	for each u in Q:
+		d[u] <- infinite;
+	d[v] <- 0; (v: root node, chozen at random).
+	while( Q != empty ):
+		u <- deleteMin(Q);						<- O(|V|log|V|)  (while문도 합쳐서 고려한 것)
+		for each v in L(u) n Q: (L(u)는 u에 adjacent한 vertices list.)
+			if(w(u,v) < d[v]):
+			then d[v] <- w(u, v);
+		             update the priority queue Q with regard to v;   <- O(|E|log|V|) (이것도 마찬가지로 while문도.)
+	전체 수행 시간은 O(|E|log|V|)
+
+
+
+- Shortest Paths
+	Given a digraph G = (V, E) with weight, function W: E -> R.
+	If P is a path consisting of e_1, e_2, ... , e_n, then w(P) = sigma from (i = 1) to K {w(e_i)}.
+	1. Single-path shortest path problem.
+	2. Single-source shortest path problem.
+	3. All-pairs shortest path problem.
+
+Single-source shortest path problem.
+	Case 1: non-negative weights only.
+		Dijkstra Algorithm - basically the same as prim's algorithm for M.S.T.
+			Q <- V;	// Q: a priority queue.
+			for each u in Q:
+				d[u] <- infinite;
+			d[s] <- 0;
+			while( Q != empty ):
+				u <- deleteMin(Q);
+				for each v in L(u) n Q:
+					if(d[v] > d[u] + w(u, v))
+					then d[v] <- d[u] + w(u,v);
+					     update the priority queue Q with regard to v;
+		<Correctness proof> - by mathematical induction.
+		Running time: O(|E|log|M|)
+
+	Case 2: Allows negative-weight edges, but no negative-weight cycle.
+		Bellman-Ford Algorithm:
+			d[s] <- 0;
+			for each v in V - {s}:
+				d[v] <- infinite;
+			// 요기까지 initialize.
+			for i <- 1 to |v| - 1:
+				for each (u,v) in E:
+					d[v] <- min{d[v], d[u] + w(u,v)};
+			// negative-cycle check
+			for each (u,v) in E:
+				if d[v] > d[u] + w(u,v) 
+				then output "negative-weight cycle!";
+
+		* Bellman-Ford alg. is basically a dynamic programming.
+		  (d_v)^k : shortests-path length to v with no more than k edges. (Max k edges)
+		  Assume (v, v) consists of E in all vertex V. (v,v도 엣지)
+		  (d_v)^k = min           { (d_u)^(k-1) + w(u,v) }   ( k >= 1 )
+			       (u,v) in E
+		  (d_s)^0 = 0, (d_n)^0 = inf for all v in V - {s}
+
+		* Correctness of checking negative-weight cycles.
+		  Assume a negative-weight cycle v_0, v_1, ... , v_k(v_0).
+		  i.e., sigma_(i=1) to k {w(v_(i-1), v_i) } < 0 
+		  Suppose for the contradiction that the alg. doesn't output "negative-weight cycle!",
+		  Then d[v_i] <= d[v_(i-1)] + w(v_(i-1), v_i), i = 1,2,...,k
+		    => sigma_(i=1) to k {d[v_i]} <= sigma_(i=1) to k {d[v_(i-1)]} + sigma_(i=1) to k {w(v_(i-1), v_i} => 0 <= sigma_(i=1) to k {w(v_(i-1), v_i). contradiction!.
+		       이 때 sigma_(i=1) to k {d[v_(i-1)]} == sigma_(i=1) to k {d[v_i]}.
+
+		Running time: Theta(|V||E|).		
+
+		* Some improvements are also possible. Still, worst-case running time is Theta(|V||E|).
+		  이 전에 relaxation이 일어나지 않았으면 볼 필요가 없게 수정.
+
+	Case 3: Directed acyclic graph(DAG)
+		
+		topologically sort the vertices;
+		d[s] <- 0;
+		for each v in V - {s}:
+			d[v] <- inf;
+		for each u in V in topological order:
+			for each v in L(u):
+				if d[v] > d[u] + w(u,v)
+				then d[v] <- d[u] + w(u,v);
+		Running time: Theta(|V| + |E|) , same as Theta(|E|)
+		
+
+* for positive-weight edges, Shortest path problem - O(|E|log|V|)
+			     Longest simple path problem - NP-hard problem!!!
+
+All-pairs shortest paths
+	Compute shortest paths between all pairs of vertices. ( 2차원 행렬을 구하는 문제가 됨. D[i,j]는 v_i에서 v_j로 가는 가장 짧은 경로)
+	pi[i,j] = k가 i로부터 j로 가는 데 마지막으로 k가 저장되었다는 뜻이라고 하자. 그러면 2차원 행렬 공간으로 shortest path 모두 복원 가능.
+	
+	가장 단순한 건 벨만포드를 시작점만 다르게 해서 n번 돌림.(Theta(|V|^2|E|)) -> E가 V^2까지 갈 수 있기 때문에 최악의 경우 V^4 가능.
+	An optimal substructure(but inefficient)
+	d_(i,j)^k = the min length of paths from v_i to v_j that contain at most k edges.
+	d_(i,j)^u = 0 if i = j, inf if 0,w
+	d_(i,j)^m = min            { d_(i,k)^(m-1) + w_(k,j) }
+			(k,j) in E
+	문제의 총수 = Theta(|v^3|).
+	이 것을 개선해서 |V|^3에 항상 끝날 수 있게 알고리즘.
+	
+	Floyd-Warshall Algorithm.
+		Let V = {v_1,v_2,...,v_n}
+		d_(i,j)^k = the minimum length of paths from v_i to v_j using only vertices in {v_1,...,v_k} as intermediate vertices.
+		d_(i,j)^k = min { d_(i,j)^(k-1), d_(i,k)^(k-1) + d_(k,j)^(k-1) }   <- 이 친구는 상수시간에 끝나게 됨.
+		만약 i~k 경로와 k~j 경로 중 겹치는 vertex가 있다면 어떨까? -> 겹치는 경우가 나타나지 않는다.(겹치면 cycle이 됨.)
+		
+	for i <- 1 to n
+		for j <- 1 to n
+			d_(i,j)^0 = w_(i,j);
+	for k <- 1 to n
+		for i <- 1 to n
+			for j <- 1 to n
+				d_(i,j)^k = min { d_(i,j)^(k-1), d_(i,k)^(k-1) + d_(k,j)^(k-1) };
+
+
+Transitive Closure of a graph
+	d_(i,j)^k = 1 if there is a path v_i ---> v_j using { v_1, ... , v_k }. 0 otherwise.
+	d_(i,j)^k = d_(i,j)^(k-1) or ( d_(i,k)^(k-1) and d_(k,j)^(k-1) )
+
+
+
+
+
+
+- Matrix Multiplication: Strassen Algorithm
+	Matrix multiplication.
+		- Want to multiply two n*n matrices A&B.
+		- C = AB.
+		- Divide the matrices into four n/2 * n/2 matrices.
+		- Then C = AB can be rewritten as 
+		r  s  =   a  b  e  g
+		t  u      c  d  f  h
+		where r = ae+bf, s = ag+bh, t = ce+df, u = cg+dh.
+		- Running Time -> T(n) = 8*T(n/2) + Theta(n^2). --> Theta(n^3).
+		What if we can decrease the # of multiplications of n/2 * n/2 matries?
+		
+	Strassen's Algorithm:
+		P_1 = a(g-h)
+		P_2 = (a+b)h
+		P_3 = (c+d)e
+		P_4 = d(f-e)
+		P_5 = (a+b)(e+h)
+		P_6 = (b-d)(f+h)
+		P_7 = (a-c)(e+g)
+		then r = P_5 + P_4 - P_2 + P_6
+		     s = P_1 + P_2
+		     t = P_3 + P_4
+		     u = P_5 + P_1 - P_3 - P_7
+		T(n) = 7*T(n/2) + Theta(n^2) -> T(n) = Theta(n^(log_2(7))) ~= Theta(n^2.81)
+		
+
+
+
+
+
+
+- String Matching:
+	여긴 강의자료 참고.
+
+
+
+
+- NP-Completeness
+* NP-complete problems are a class of problems which most people believe will be a subset of more-than-O(n^k) problems.
+* Decision problem(example): Is there a path from u to v with length <= k?
+  Optimization problems(example): What is the shortest path length from u to v?
+* The theory of NP-completeness restricts attention to decision problems(Yes/No problem).
+
+An Intuitive Definition
+P: the class of problems that can be "decided"(by answering Yes or No) in polynomial time.
+NP(Non-deterministic Polynomial): the class of problems that can be "verified" (by answering Yes) in polynomial time.
+	* Decision - say "yes" or "no" in any case.
+	  Verification - just say "yes".
+			 doesn't have to answer when the answer is "no"
+
+A Formal-Language Definition
+	P = { L(Language) in sigma* | there exists an algorithm A that decides L in polynomial time }
+	NP = { L in sigma* | there exists an algorithm A that verifies L in polynomial time }
+	Language is a set of string. problems ~= language,
+				     solution ~= element.
+
+Polynomial-time verification example
+	Hamiltonian cycle of an undirected graph G = (V, E) is a simple(no loop) cycle that contians every vertex in V.
+	
+	Hamiltonian-cycle problem
+		Does G have a Hamiltonian cycle?
+		or equivalently
+		G in HAM? where HAM = {<G> | G has a Hamiltonian cycle}
+		
+		* A simple decision algorithm
+			- Enumerate all |V|! permutations of the vertices and check to see if they construct a Ham cycle.
+			- at least Sigma(2^|v|).
+		* What if a certificate(a sequence of vertices) is given?
+		  Proving that the certificate makes a Ham cycle is obviously easy -> O(|v|^2).
+
+* P in NP (trivial)
+  P = NP <- open question($100M question).
+  conjecture. P != NP.
+
+Reducibility
+	A language L_1 is said to be "poly-time reducible" to a language L_2, denoted by L1 <=_p L2,
+	if there exists a poly-time computable function f: sigma* -> sigma* such that all x in sigma*, x in L_1 <=> f(x) in L_2.
+	     f
+	L_1 ---> L_2
+     x in L_1 <=> f(x) in L_2

@@ -1,0 +1,176 @@
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="application/vnd.ms-excel; charset=utf-8"/>
+    <title> SNU CRS Registration  System </title>
+</head>
+
+ <body>
+    <div align="center">
+        <table width="95%" align="center" cellpadding="3" cellspacing="0" border="1">
+            <tr>
+                <td bgcolor="#007BB7" height="30" width="100%" valign="top" colspan="10" >
+                    <font color="#FFFFFF"><strong>Course : 4190.201 Logic Design</strong></font>
+                </td>
+            </tr>
+            <tr>
+                <td width="60" align="center" rowspan="2">Credits</td>
+                <td width="60" align="center" rowspan="2" colspan="3">Department</td>
+                <td width="45%" align="center" colspan="6">Representative Instructor</td>
+            </tr>
+            <tr>
+                <td width="15%" align="center" colspan="2">Position</td>
+                <td width="15%" align="center" colspan="2">Name</td>
+                <td width="15%" align="center" colspan="2">Email</td>
+            </tr>
+            <tr>
+                <td width="14%" align="center">3</td>
+                <td width="14%" align="center" colspan="3">Department of Computer Science and Engineering</td>
+                <td width="14%" align="center" colspan="2">Professor</td>
+                <td width="14%" align="center" colspan="2">Chang, Naehyuck</td>
+                <td width="14%" align="center" colspan="2">naehyuck@snu.ac.kr</td>
+            </tr>
+            <tr>
+            	<td align="center" colspan="5" >Attachment(Korean)</td>
+            	<td align="center" colspan="5" >Attachment(English)</td>
+            </tr>
+            
+            
+            	
+           	<tr>
+            	<td colspan="5" ></td>
+            	<td colspan="5" ></td>
+            </tr>
+            	
+            
+            <tr>
+                <td width="14%">Prerequisite Course</td>
+                <td width="86%" colspan="9" align="left"></td>
+            </tr>
+            <tr>
+                <td width="14%">Consult Time</td>
+                <td width="86%" colspan="9" align="left">Wed 12-1 pm / 301-409</td>
+            </tr>
+            <tr>
+                <td width="14%">1. Goals</td>
+                <td width="86%" colspan="9"><pre>This main goal of this course is to train students with basic knowledge on digital logic design. After taking this course, students are expected to be able to design simple digital systems such as adders, multiplexers, and stop watches. The topics covered include (1) basic logic gates, (2) combinational logic design, (3) sequential logic design, (4) logic optimization, and (5) simple computer system design. </pre></td>
+            </tr>
+            <tr>
+                <td width="14%">2. Texts and References</td>
+                <td width="86%" colspan="9"></td>
+            </tr>
+            <tr>
+                <td width="14%">3. Evaluation</td>
+                <td align="center" colspan="9">
+                    <table>
+                        <tr>
+                            <td width="12%" align="center">Attendance(%)</td>
+                            <td width="12%" align="center">Task(%)</td>
+                            <td width="12%" align="center">Medium(%)</td>
+                            <td width="12%" align="center">Final(%)</td>
+                            <td width="15%" align="center">Random<br />Evaluation(%)</td>
+                            <td width="12%" align="center">Attitude(%)</td>
+                            <td width="12%" align="center">Others(%)</td>
+                            <td width="12%" align="center">Total(%)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                0% 
+                                
+                            </td><!-- 출석 -->
+                            <td align="center">
+                                20%
+                                
+                            </td><!-- 과제 -->
+                            <td align="center">
+                                30%
+                                
+                            </td><!-- 중간 -->
+                            <td align="center">
+                                50%
+                                
+                            </td><!-- 기말 -->
+                            <td align="center">
+                                0%
+                                
+                            </td><!-- 수시평가 -->
+                            <td align="center">
+                                0%
+                                
+                            </td><!-- 태도 -->
+                            <td align="center">
+                                0%
+                                
+                            </td><!-- 기타 -->
+                            <td align="center">
+                                100%
+                                
+                            </td><!-- 합계 -->
+                        </tr>
+                        <tr>
+                            <td colspan="9">Remark : </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="14%">4. Lecture Plan</td>
+				
+                <td width="86%" colspan="9"><pre>[ 1 Week ]
+Syllabus, introduction
+[ 2 Week ]
+Two-level Combinational Logic Design
+[ 3 Week ]
+Two-level Combinational Logic Simplification
+[ 4 Week ]
+Timing analysis of Combinational Logic
+[ 5 Week ]
+Multi-level Combinational Logic
+[ 6 Week ]
+Mutiplexer, Decoder, ROM
+[ 7 Week ]
+Programmable logic components
+[ 8 Week ]
+Combinational logic design with hardware description language
+[ 9 Week ]
+R-S Latch, Flip-flops
+[ 10 Week ]
+Registers
+[ 11 Week ]
+Counters
+[ 12 Week ]
+Generic approach for designing sequential logics
+[ 13 Week ]
+Practical approach for designing a large sequential logic
+[ 14 Week ]
+Sequential logic design with hardware description language
+[ 15 Week ]
+Syllabus, introduction</pre></td>
+				
+				
+            </tr>
+            <tr> <!-- end 강의내용 -->
+                <td width="14%">5. Guideline for Students</td>
+                <td width="86%" colspan="9"></td>
+            </tr>
+			<tr>
+			    <td width="14%" rowspan="3">6. Support Services for Students with Disabilities</td>
+			    <td width="14%">For Lectures</td>
+			    <td colspan="8"><pre></pre></td>
+			</tr>
+			<tr>
+			    <td width="14%">For Assignments & Evaluations</td>
+			    <td colspan="8"><pre></pre></td>
+			</tr>
+			<tr>
+			    <td width="14%">Others</td>
+			    <td colspan="8"><pre></pre></td>
+			</tr>
+        </table>
+    </div>
+</body>
+</html>

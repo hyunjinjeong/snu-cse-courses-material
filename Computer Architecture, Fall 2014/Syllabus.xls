@@ -1,0 +1,176 @@
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="application/vnd.ms-excel; charset=utf-8"/>
+    <title> SNU CRS Registration  System </title>
+</head>
+
+ <body>
+    <div align="center">
+        <table width="95%" align="center" cellpadding="3" cellspacing="0" border="1">
+            <tr>
+                <td bgcolor="#007BB7" height="30" width="100%" valign="top" colspan="10" >
+                    <font color="#FFFFFF"><strong>Course : 4190.308 Computer Architecture</strong></font>
+                </td>
+            </tr>
+            <tr>
+                <td width="60" align="center" rowspan="2">Credits</td>
+                <td width="60" align="center" rowspan="2" colspan="3">Department</td>
+                <td width="45%" align="center" colspan="6">Representative Instructor</td>
+            </tr>
+            <tr>
+                <td width="15%" align="center" colspan="2">Position</td>
+                <td width="15%" align="center" colspan="2">Name</td>
+                <td width="15%" align="center" colspan="2">Email</td>
+            </tr>
+            <tr>
+                <td width="14%" align="center">3</td>
+                <td width="14%" align="center" colspan="3">Department of Computer Science and Engineering</td>
+                <td width="14%" align="center" colspan="2">Associate Professor</td>
+                <td width="14%" align="center" colspan="2">Bernhard Egger</td>
+                <td width="14%" align="center" colspan="2">bernhard@snu.ac.kr</td>
+            </tr>
+            <tr>
+            	<td align="center" colspan="5" >Attachment(Korean)</td>
+            	<td align="center" colspan="5" >Attachment(English)</td>
+            </tr>
+            
+            
+            	
+           	<tr>
+            	<td colspan="5" ></td>
+            	<td colspan="5" ></td>
+            </tr>
+            	
+            
+            <tr>
+                <td width="14%">Prerequisite Course</td>
+                <td width="86%" colspan="9" align="left"></td>
+            </tr>
+            <tr>
+                <td width="14%">Consult Time</td>
+                <td width="86%" colspan="9" align="left">Thursdays 9am to noon, Room 403, Building 301</td>
+            </tr>
+            <tr>
+                <td width="14%">1. Goals</td>
+                <td width="86%" colspan="9"><pre>[English lecture] Computer architecture is the science of selecting and interconnecting hardware components and designing a hardware/software interface to build a computer that meets functional, performance, energy consumption, cost, and other specific goals. In this course, you will learn the basics of a modern programmable computer including the instruction set, pipelining to run several instructions simultaneously, and several other techniques such as virtual memory or caches. The theoretical principles taught in class are applied in pracice in labs (small projects) and homework assignments.</pre></td>
+            </tr>
+            <tr>
+                <td width="14%">2. Texts and References</td>
+                <td width="86%" colspan="9">Computer Systems: A Programmer&#039;s Perspective, Second Edition-Randal E. Bryant and David R. O&#039;Hallaron-Prentice Hall-2011</td>
+            </tr>
+            <tr>
+                <td width="14%">3. Evaluation</td>
+                <td align="center" colspan="9">
+                    <table>
+                        <tr>
+                            <td width="12%" align="center">Attendance(%)</td>
+                            <td width="12%" align="center">Task(%)</td>
+                            <td width="12%" align="center">Medium(%)</td>
+                            <td width="12%" align="center">Final(%)</td>
+                            <td width="15%" align="center">Random<br />Evaluation(%)</td>
+                            <td width="12%" align="center">Attitude(%)</td>
+                            <td width="12%" align="center">Others(%)</td>
+                            <td width="12%" align="center">Total(%)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                5% 
+                                
+                            </td><!-- 출석 -->
+                            <td align="center">
+                                50%
+                                
+                            </td><!-- 과제 -->
+                            <td align="center">
+                                20%
+                                
+                            </td><!-- 중간 -->
+                            <td align="center">
+                                25%
+                                
+                            </td><!-- 기말 -->
+                            <td align="center">
+                                0%
+                                
+                            </td><!-- 수시평가 -->
+                            <td align="center">
+                                0%
+                                
+                            </td><!-- 태도 -->
+                            <td align="center">
+                                0%
+                                
+                            </td><!-- 기타 -->
+                            <td align="center">
+                                100%
+                                
+                            </td><!-- 합계 -->
+                        </tr>
+                        <tr>
+                            <td colspan="9">Remark : </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="14%">4. Lecture Plan</td>
+				
+                <td width="86%" colspan="9"><pre>[ 1 Week ]
+Introduction
+[ 2 Week ]
+Instruction Set Architecture (ISA) (Instruction types and addressing modes)
+[ 3 Week ]
+Instruction Set Architecture (ISA) (RISC vs. CISC)
+[ 4 Week ]
+Processor Architecture (Sequential architecture)
+[ 5 Week ]
+Processor Architecture (Pipelined and advanced architecture)
+[ 6 Week ]
+Memory Hierarchy (Overall memory system organization)
+[ 7 Week ]
+Memory Hierarchy (Principles of program locality and CPU cache memory)
+[ 8 Week ]
+Memory Hierarchy (Virtual memory basics)
+[ 9 Week ]
+I/O Systems (I/O processing overview)
+[ 10 Week ]
+I/O Systems (Interrupt mechanism)
+[ 11 Week ]
+I/O Systems (DMA)
+[ 12 Week ]
+I/O Systems (Sample I/O devices)
+[ 13 Week ]
+Advanced material on computer architecture
+[ 14 Week ]
+Advanced material on computer architecture
+[ 15 Week ]
+Advanced material on computer architecture</pre></td>
+				
+				
+            </tr>
+            <tr> <!-- end 강의내용 -->
+                <td width="14%">5. Guideline for Students</td>
+                <td width="86%" colspan="9"></td>
+            </tr>
+			<tr>
+			    <td width="14%" rowspan="3">6. Support Services for Students with Disabilities</td>
+			    <td width="14%">For Lectures</td>
+			    <td colspan="8"><pre></pre></td>
+			</tr>
+			<tr>
+			    <td width="14%">For Assignments & Evaluations</td>
+			    <td colspan="8"><pre></pre></td>
+			</tr>
+			<tr>
+			    <td width="14%">Others</td>
+			    <td colspan="8"><pre></pre></td>
+			</tr>
+        </table>
+    </div>
+</body>
+</html>

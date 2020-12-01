@@ -1,0 +1,176 @@
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="application/vnd.ms-excel; charset=utf-8"/>
+    <title> SNU CRS Registration  System </title>
+</head>
+
+ <body>
+    <div align="center">
+        <table width="95%" align="center" cellpadding="3" cellspacing="0" border="1">
+            <tr>
+                <td bgcolor="#007BB7" height="30" width="100%" valign="top" colspan="10" >
+                    <font color="#FFFFFF"><strong>Course : 4190.206A Electrical and Electronic Circuits</strong></font>
+                </td>
+            </tr>
+            <tr>
+                <td width="60" align="center" rowspan="2">Credits</td>
+                <td width="60" align="center" rowspan="2" colspan="3">Department</td>
+                <td width="45%" align="center" colspan="6">Representative Instructor</td>
+            </tr>
+            <tr>
+                <td width="15%" align="center" colspan="2">Position</td>
+                <td width="15%" align="center" colspan="2">Name</td>
+                <td width="15%" align="center" colspan="2">Email</td>
+            </tr>
+            <tr>
+                <td width="14%" align="center">3</td>
+                <td width="14%" align="center" colspan="3">Department of Computer Science and Engineering</td>
+                <td width="14%" align="center" colspan="2">Professor</td>
+                <td width="14%" align="center" colspan="2">Ha, Soonhoi</td>
+                <td width="14%" align="center" colspan="2">sha@snu.ac.kr</td>
+            </tr>
+            <tr>
+            	<td align="center" colspan="5" >Attachment(Korean)</td>
+            	<td align="center" colspan="5" >Attachment(English)</td>
+            </tr>
+            
+            
+            	
+           	<tr>
+            	<td colspan="5" ></td>
+            	<td colspan="5" ></td>
+            </tr>
+            	
+            
+            <tr>
+                <td width="14%">Prerequisite Course</td>
+                <td width="86%" colspan="9" align="left"></td>
+            </tr>
+            <tr>
+                <td width="14%">Consult Time</td>
+                <td width="86%" colspan="9" align="left"></td>
+            </tr>
+            <tr>
+                <td width="14%">1. Goals</td>
+                <td width="86%" colspan="9"><pre>In this lecture, basics on electrical and electronic circuits will be covered. We will start with the resistive circuits and various analysis techniques. Then, we will learn how the same MOS transistor is used for both digital switching circuits and analog amplifier circuits. In the second half of the lecture, we focus on the first-order and the second-order circuits that include capacitor or inductor elements. Specially frequency-domain analysis techniques will be taught. From this course, non-EE major students will learn the basics for digital system hardware. </pre></td>
+            </tr>
+            <tr>
+                <td width="14%">2. Texts and References</td>
+                <td width="86%" colspan="9">Materials-Foundations of Analog and Digital Electronic Circuits-Agarwal and Lang-Morgan Kaufmann-2005</td>
+            </tr>
+            <tr>
+                <td width="14%">3. Evaluation</td>
+                <td align="center" colspan="9">
+                    <table>
+                        <tr>
+                            <td width="12%" align="center">Attendance(%)</td>
+                            <td width="12%" align="center">Task(%)</td>
+                            <td width="12%" align="center">Medium(%)</td>
+                            <td width="12%" align="center">Final(%)</td>
+                            <td width="15%" align="center">Random<br />Evaluation(%)</td>
+                            <td width="12%" align="center">Attitude(%)</td>
+                            <td width="12%" align="center">Others(%)</td>
+                            <td width="12%" align="center">Total(%)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                5% 
+                                
+                            </td><!-- 출석 -->
+                            <td align="center">
+                                5%
+                                
+                            </td><!-- 과제 -->
+                            <td align="center">
+                                60%
+                                
+                            </td><!-- 중간 -->
+                            <td align="center">
+                                30%
+                                
+                            </td><!-- 기말 -->
+                            <td align="center">
+                                0%
+                                
+                            </td><!-- 수시평가 -->
+                            <td align="center">
+                                0%
+                                
+                            </td><!-- 태도 -->
+                            <td align="center">
+                                0%
+                                
+                            </td><!-- 기타 -->
+                            <td align="center">
+                                100%
+                                
+                            </td><!-- 합계 -->
+                        </tr>
+                        <tr>
+                            <td colspan="9">Remark : We will have two midterm exams and one final exam.</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="14%">4. Lecture Plan</td>
+				
+                <td width="86%" colspan="9"><pre>[ 1 Week ]
+Chap. 1 Circuit abstraction
+[ 2 Week ]
+Chap. 2 Resistive networks
+[ 3 Week ]
+Chap. 3 Network theorems
+[ 4 Week ]
+Chap. 4 Analysis of Nonlinear Circuits
+[ 5 Week ]
+Chap. 5 and 6, The digital abstraction and the MOSFET switch
+[ 6 Week ]
+Chap. 7 The MOSFET amplfier and first midterm
+[ 7 Week ]
+Chap. 7 The MOSFET amplifer
+[ 8 Week ]
+Chap. 9 and 10, Energy Storage Elements, and 1-st order transient analysis
+[ 9 Week ]
+Chap 10. 1-st order transient analysis of linear circuits
+[ 10 Week ]
+Chap. 11 Energy and Power in Digital Circuits
+[ 11 Week ]
+second midterm and Chap. 12 Transient in 2-nd oder circuits
+[ 12 Week ]
+Chap. 12 Transients in 2-nd order circuits
+[ 13 Week ]
+Chap. 13 Sinusoidal steady state: impedance and freqeuncy response
+[ 14 Week ]
+Chap. 15 The operational Amplifier Abstraction
+[ 15 Week ]
+Chap. 1 Circuit abstraction</pre></td>
+				
+				
+            </tr>
+            <tr> <!-- end 강의내용 -->
+                <td width="14%">5. Guideline for Students</td>
+                <td width="86%" colspan="9">Engineering math 1 is prerequisite / English Lecture</td>
+            </tr>
+			<tr>
+			    <td width="14%" rowspan="3">6. Support Services for Students with Disabilities</td>
+			    <td width="14%">For Lectures</td>
+			    <td colspan="8"><pre></pre></td>
+			</tr>
+			<tr>
+			    <td width="14%">For Assignments & Evaluations</td>
+			    <td colspan="8"><pre></pre></td>
+			</tr>
+			<tr>
+			    <td width="14%">Others</td>
+			    <td colspan="8"><pre></pre></td>
+			</tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="application/vnd.ms-excel; charset=utf-8"/>
+    <title> SNU CRS Registration  System </title>
+</head>
+
+ <body>
+    <div align="center">
+        <table width="95%" align="center" cellpadding="3" cellspacing="0" border="1">
+            <tr>
+                <td bgcolor="#007BB7" height="30" width="100%" valign="top" colspan="10" >
+                    <font color="#FFFFFF"><strong>Course : 4190.204 Data Structures</strong></font>
+                </td>
+            </tr>
+            <tr>
+                <td width="60" align="center" rowspan="2">Credits</td>
+                <td width="60" align="center" rowspan="2" colspan="3">Department</td>
+                <td width="45%" align="center" colspan="6">Representative Instructor</td>
+            </tr>
+            <tr>
+                <td width="15%" align="center" colspan="2">Position</td>
+                <td width="15%" align="center" colspan="2">Name</td>
+                <td width="15%" align="center" colspan="2">Email</td>
+            </tr>
+            <tr>
+                <td width="14%" align="center">3</td>
+                <td width="14%" align="center" colspan="3">Department of Computer Science and Engineering</td>
+                <td width="14%" align="center" colspan="2">Professor</td>
+                <td width="14%" align="center" colspan="2">Moon,  Byung-Ro</td>
+                <td width="14%" align="center" colspan="2">moon@snu.ac.kr</td>
+            </tr>
+            <tr>
+            	<td align="center" colspan="5" >Attachment(Korean)</td>
+            	<td align="center" colspan="5" >Attachment(English)</td>
+            </tr>
+            
+            
+            	
+           	<tr>
+            	<td colspan="5" ></td>
+            	<td colspan="5" ></td>
+            </tr>
+            	
+            
+            <tr>
+                <td width="14%">Prerequisite Course</td>
+                <td width="86%" colspan="9" align="left"></td>
+            </tr>
+            <tr>
+                <td width="14%">Consult Time</td>
+                <td width="86%" colspan="9" align="left"></td>
+            </tr>
+            <tr>
+                <td width="14%">1. Goals</td>
+                <td width="86%" colspan="9"><pre>In the class, you learn systematic and organized thinking methods for problem solving and the representation of concepts and data structures. Among others, included are the data structures for queues, stacks, search trees, hash tables, and the problem-solving methods in relation to graphs.</pre></td>
+            </tr>
+            <tr>
+                <td width="14%">2. Texts and References</td>
+                <td width="86%" colspan="9"></td>
+            </tr>
+            <tr>
+                <td width="14%">3. Evaluation</td>
+                <td align="center" colspan="9">
+                    <table>
+                        <tr>
+                            <td width="12%" align="center">Attendance(%)</td>
+                            <td width="12%" align="center">Task(%)</td>
+                            <td width="12%" align="center">Medium(%)</td>
+                            <td width="12%" align="center">Final(%)</td>
+                            <td width="15%" align="center">Random<br />Evaluation(%)</td>
+                            <td width="12%" align="center">Attitude(%)</td>
+                            <td width="12%" align="center">Others(%)</td>
+                            <td width="12%" align="center">Total(%)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                0% 
+                                
+                            </td><!-- 출석 -->
+                            <td align="center">
+                                30%
+                                
+                            </td><!-- 과제 -->
+                            <td align="center">
+                                30%
+                                
+                            </td><!-- 중간 -->
+                            <td align="center">
+                                30%
+                                
+                            </td><!-- 기말 -->
+                            <td align="center">
+                                0%
+                                
+                            </td><!-- 수시평가 -->
+                            <td align="center">
+                                0%
+                                
+                            </td><!-- 태도 -->
+                            <td align="center">
+                                10%
+                                
+                            </td><!-- 기타 -->
+                            <td align="center">
+                                100%
+                                
+                            </td><!-- 합계 -->
+                        </tr>
+                        <tr>
+                            <td colspan="9">Remark : .</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="14%">4. Lecture Plan</td>
+				
+                <td width="86%" colspan="9"><pre></pre></td>
+				
+				
+            </tr>
+            <tr> <!-- end 강의내용 -->
+                <td width="14%">5. Guideline for Students</td>
+                <td width="86%" colspan="9">No upper bound for class repetition. But a repetition student must position high in his grade. If marginal, one-grade down will be enforced.</td>
+            </tr>
+			<tr>
+			    <td width="14%" rowspan="3">6. Support Services for Students with Disabilities</td>
+			    <td width="14%">For Lectures</td>
+			    <td colspan="8"><pre></pre></td>
+			</tr>
+			<tr>
+			    <td width="14%">For Assignments & Evaluations</td>
+			    <td colspan="8"><pre></pre></td>
+			</tr>
+			<tr>
+			    <td width="14%">Others</td>
+			    <td colspan="8"><pre></pre></td>
+			</tr>
+        </table>
+    </div>
+</body>
+</html>
