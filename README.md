@@ -2,7 +2,7 @@
 
 This repository contains the material of the Computer Science and Engineering courses that I took at Seoul National University in 2013-2020.
 
-Unfortunately, the contents of many courses are not complete. Also, there are some courses not included. It's because I lost backup files of them :(
+Unfortunately, some of the courses here contain incomplete contents. Also, there are some courses not included. It's because I lost backup files of them :(
 
 ## Courses whose contents are not complete
 
@@ -14,7 +14,7 @@ Unfortunately, the contents of many courses are not complete. Also, there are so
 - [Principles of Programming, Fall 2014](https://github.com/hyunjinjeong/snu-cse-courses-material/tree/master/Principles%20of%20Programming%2C%20Fall%202014) - No source code for the homework and the labs
 - [Programming Langauge, Spring 2015](https://github.com/hyunjinjeong/snu-cse-courses-material/tree/master/Programming%20Langauge%2C%20Spring%202015/sf) - No source code for the labs
 
-## Courses not included in this repository
+## Courses not included in this repository (which I took)
 
 - Discrete Mathematics, Spring 2014
 - Data Communications, Spring 2015
